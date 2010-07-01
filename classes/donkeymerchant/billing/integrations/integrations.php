@@ -25,5 +25,7 @@
  * THE SOFTWARE.
  */
 
-require 'donkeymerchant/billing/base.php';
-require 'donkeymerchant/billing/credit_card.php';
+class DonkeyMerchant_Billing_Integrations
+{
+	const PAYPAL_EXPRESS_CHECKOUT			= 1;
+}

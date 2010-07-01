@@ -25,19 +25,43 @@
  * THE SOFTWARE.
  */
 
-class DonkeyMerchant_Base
+class DonkeyMerchant_Billing
 {
 	/**
-	 * Run gateways in test mode
+	 * Run gateway in test mode
 	 */
-	protected $gateways_test_mode = FALSE;
+	protected $gateway_mode = ;
+	
+	/*
+	 * Gateway and Integration mode constants
+	 */
+	public const GATEWAY_TEST			= "test";
+	public const GATEWAY_PRODUCTION		= "production";
+	/*
+	 */
+	public const INTEGRATION_TEST		= "test";
+	public const INTEGRATION_PRODUCTION	= "production";
 	
 	/**
-	 * Factory
-	 *
-	 * @return DonkeyMerchant Billing 
+	 * Gateway Factory
 	 */
-	public static function factory($gateway = "", $test_mode = FALSE)
+	public static function gateway($gateway = NULL, $mode = GATEWAY_TEST)
+	{
+		
+	}
+	
+	/*
+	 * Integration Factory
+	 */
+	public static function integration($integration = NULL, $mode = INTEGRATION_TEST)
+	{
+		
+	}
+	
+	/**
+	 * Set Gateway Mode
+	 */
+	public static function set_gateway_mode($mode = FALSE)
 	{
 		
 	}
